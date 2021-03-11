@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif TC', serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*ici correspond au menu*/
+
+#menu{
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+}
+
+p{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu{
+    width: 800px;
+    height: 100%;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover a{
+    color: white;
+}
+
+/*ici correspond aux differentes parties de mon portfolio*/
+
+.accueil{
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.presentation{
+    width: 100%;
+    height: 50vh;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.realisation{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.activites{
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.competences{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+
+/*ici correspond a la partie contact*/
+
+.contact{
+    width: 100%;
+    height: 80vh;
+    background-color: #f5f5f5;
+    display: block;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+#texte1{
+    font-weight: normal;
+    opacity: 20%;
+    cursor: auto;
+    font-size: 6em;
+}
+
+.texte1{
+    cursor: auto;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+#trait{
+    width: 60px;
+    height: 0.5px;
+    background-color: black;
+}
+
+.formulaire{
+    width: 50%;
+    height: 32vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nom{
+    width: 500px;
+    height: 4vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.adresse{
+    width: 500px;
+    height: 4vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.message{
+    width: 500px;
+    height: 20vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.button{
+    width: 500px;
+    height: 4vh;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*ici correspond au footer*/
+
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+/*ici correspond au style qu'aura mon site a sa taille minimum*/
+
+@media (min-width: 700px) {
+    .menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+}
+
+/*ici correspond au style qu'aura mon site a sa taille maximum en responsive*/
+
+@media (max-width: 699px) {
+
+    .menu {
+        position: absolute;
+        top: 65px;
+        right: -80%;
+        width: 80%;
+        background-color: black;
+        min-height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s;
+        padding: 30px;
+    }
+
+    .open .menu {
+        right: 0;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-menu {
+        width: 60px;
+        height: 47px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn-menu span {
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        background-color:grey;
+        border-radius: 4px;
+        opacity: 1;
+        transition: all 0.6s;
+    }
+
+    .span-1 {
+        top: 0;
+        left: 0;
+    }
+
+    .span-2 {
+        top: 20px;
+        left: 0;
+    }
+
+    .span-3 {
+        top: 40px;
+        left: 0;
+    }
+
+    .open .span-1 {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    .open .span-3 {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .open .span-2 {
+        left: -40px;
+        opacity: 0;
+    }
+
+    .contact{
+        width: 100%;
+        height: 90vh;
+        background-color: grey;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #texte1{
+        font-weight: normal;
+        opacity: 20%;
+        cursor: auto;
+        padding: 10px;
+        font-size: 3em;
+    }
+
+    .texte1{
+        font-size: 1em;
+        font-weight: normal;
+        cursor: auto;
+    }
+    
+    #trait{
+        width: 80px;
+        height: 1px;
+        background-color: black;
+    }
+    
+    .nom{
+        width: 100%;
+        height: 4vh;
+        border-radius: 3px;
+        padding: 10px;
+    }
+    
+    .adresse{
+        width: 100%;
+        height: 4vh;
+        border-radius: 3px;
+        padding: 10px;
+    }
+    
+    .message{
+        width: 100%;
+        height: 20vh;
+        border-radius: 3px;
+        padding: 10px 10px;
+    }
+    
+    .button{
+        width: 100%;
+        height: 3vh;
+        background-color: black;
+        color: white;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

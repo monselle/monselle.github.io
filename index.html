@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <p>bonjour</p> 
+
+    <div class="accueil"></div>
+
+    <!--ici correspond au menu-->
+
+    <div id="menu">
+        <p>MONSELLE</p>
+
+        <div class="btn-menu">
+            <span class="span-1"></span>
+            <span class="span-2"></span>
+            <span class="span-3"></span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">accueil</a></li>
+            <li><a href="#presentation">presentation</a></li>
+            <li><a href="#realisation">realisation</a></li>
+            <li><a href="#activites">activites</a></li>
+            <li><a href="#competences">competences</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="">Mon cv</a></li>
+        </ul>
+
+    </div>
+
+    <!--ici correspond aux differentes parties du portfolio -->
+
+    <div class="presentation" id="presentation">
+
+        <p id="texte1">QUI SUIS-JE?</p>
+
+        <span id="trait"></span>
+
+    </div>
+
+    <div class="realisation" id="realisation"></div>
+    <div class="activites" id="activites"></div>
+    <div class="competences" id="competences"></div>
+
+    <!--ici correspond a la partie contact qui inclus le formulaire-->
+
+    <div class="contact" id="contact">
+
+        <p id="texte1">CONTACT</p>
+
+        <p class="texte1">N'HESITEZ PAS À ME CONTACTER</p>
+
+        <span id="trait"></span>
+
+        <!--ici correspond au formulaire-->
+
+        <div class="formulaire">
+
+            <label for="nom de famille"></label>
+            <input class="nom" type="text" name="nom de famille" id="nom de famille" placeholder="Nom">
+    
+            <label for="adresse mail"></label>
+            <input class="adresse" type="text" name="adresse mail" id="adresse mail" placeholder="Adresse mail">
+       
+            <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+        
+            <div class="div-submit">
+            <button class="button" type="submit">ME CONTACTER</button>
+            
+        </div>
+
+    </div>
+
+<!--ici correspond au footer-->
+
+    <div class="footer">
+        <ul>
+
+            <li class="img">
+                <a href="https://www.linkedin.com/feed/">
+                    <img src="./linkedinlogo.png" alt="logo de linkedin">
+                </a>
+            </li>
+
+            <li>
+                <img src="" alt="">
+            </li>
+
+            <li>
+                <img src="" alt="">
+            </li>
+
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</html>
