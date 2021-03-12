@@ -18,6 +18,12 @@ body{
 
 /*ici correspond à l'image d'accueil et son contenu*/
 
+.accueil{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
 .image1{
     width: 100%;
     height: 100vh;
@@ -30,10 +36,9 @@ body{
 
 .texte2{
     font-weight: normal;
-    opacity: 20%;
     cursor: auto;
-    font-size: 6em;
-    color: white;
+    font-size: 3em;
+    color: black;
     position: absolute;
     z-index: 2;
 }
@@ -92,12 +97,6 @@ li:hover a{
 }
 
 /*ici correspond aux differentes parties de mon portfolio*/
-
-.accueil{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
 
 .presentation{
     width: 100%;
