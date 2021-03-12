@@ -22,6 +22,10 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
 }
 
 .image1{
@@ -31,7 +35,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 80%;
-    z-index: -1;
 }
 
 h2{
