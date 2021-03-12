@@ -33,6 +33,7 @@ body{
     cursor: auto;
     font-size: 6em;
     color: white;
+    z-index: 1;
 }
 
 /*ici correspond au menu*/
