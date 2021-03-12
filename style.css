@@ -21,6 +21,7 @@ body{
     height: 100vh;
     background-image: url(./moi\ au\ taff.JPG);
     background-size: contain;
+    background-repeat: no-repeat;
     opacity: 20%;
 }
 
