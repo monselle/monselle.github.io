@@ -21,6 +21,7 @@ body{
 .accueil{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .image1{
@@ -30,7 +31,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 80%;
-    z-index: 1;
+    z-index: -1;
 }
 
 h2{
@@ -38,6 +39,7 @@ h2{
     cursor: auto;
     font-size: 3em;
     color: black;
+    position: absolute;
     z-index: 2;
 }
 
