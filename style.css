@@ -21,13 +21,11 @@ body{
 .accueil{
     width: 100%;
     height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: -1;
 }
 
 .image1{
@@ -36,17 +34,21 @@ body{
     background-image: url(./moi\ tout\ seul.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 80%;
-    z-index: 1;
 }
 
-h2{
+h1{
+    width: 60%;
     font-weight: normal;
     font-size: 3em;
-    color: black;
+    color: white;
     position: absolute;
-    top: 50px;
-    z-index: 2;
+    top: 80px;
+    right: 20%;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: black;
 }
 
 /*ici correspond au menu*/
@@ -106,12 +108,41 @@ li:hover a{
 
 .presentation{
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+
+#texte1{
+    width: 50%;
+    font-weight: normal;
+    opacity: 5%;
+    cursor: auto;
+    font-size: 6em;
+    position: absolute;
+    top: 60px;
+}
+
+.texte1{
+    width: 80%;
+    cursor: auto;
+    font-size: 2em;
+    font-weight: normal;
+    position: absolute;
+    letter-spacing: 1rem;
+    top: 110px;
+}
+
+#trait{
+    width: 60px;
+    height: 0.5px;
+    background-color: black;
+    position: absolute;
+    top: 250px;
 }
 
 .realisation{
@@ -128,7 +159,7 @@ li:hover a{
 
 .competences{
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     background-color: white;
 }
 
@@ -144,25 +175,35 @@ li:hover a{
     align-items: center;
     text-align: center;
     min-height: 80vh;
+    position: relative;
 }
 
-#texte1{
+#texte5{
+    width: 50%;
     font-weight: normal;
-    opacity: 20%;
+    opacity: 5%;
     cursor: auto;
     font-size: 6em;
+    position: absolute;
+    top: 100px;
 }
 
-.texte1{
+.texte5{
+    width: 80%;
     cursor: auto;
-    font-size: 4em;
+    font-size: 2em;
     font-weight: normal;
+    position: absolute;
+    letter-spacing: 1.5rem;
+    top: 150px;
 }
 
-#trait{
+#trait4{
     width: 60px;
     height: 0.5px;
     background-color: black;
+    position: absolute;
+    top: 300px;
 }
 
 .formulaire{
@@ -172,6 +213,8 @@ li:hover a{
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    bottom: 100px;
 }
 
 .nom{
@@ -236,6 +279,8 @@ img{
 /*ici correspond au style qu'aura mon site a sa taille maximum en responsive*/
 
 @media (max-width: 699px) {
+
+    /*ici correspond au menu burger*/
 
     .menu {
         position: absolute;
@@ -308,6 +353,77 @@ img{
         opacity: 0;
     }
 
+    /*ici correspond à l'accueil et son contenu en responsive*/
+
+    .accueil{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./moi\ tout\ seul.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    h1{
+        width: 60%;
+        font-weight: normal;
+        font-size: 1em;
+        color: white;
+        right: 20%;
+    }
+
+    /*ici correspond à la partie présentation et son contenu en responsive*/
+
+    .presentation{
+        width: 100%;
+        height: 65vh;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    #texte1{
+        width: 50%;
+        font-weight: normal;
+        opacity: 5%;
+        cursor: auto;
+        font-size: 2em;
+        position: absolute;
+        top: 60px;
+    }
+
+    .texte1{
+        width: 80%;
+        cursor: auto;
+        font-size: 1em;
+        font-weight: normal;
+        position: absolute;
+        letter-spacing: 0.1rem;
+        top: 75px;
+    }
+    
+    #trait{
+        width: 60px;
+        height: 0.5px;
+        background-color: black;
+        position: absolute;
+        top: 200px;
+    }
+
+    /*ici correspond au contenu de la div contact en responsive*/
+
     .contact{
         width: 100%;
         height: 90vh;
@@ -318,26 +434,32 @@ img{
         justify-content: center;
         text-align: center;
         align-items: center;
+        position: relative;
     }
 
-    #texte1{
+    #texte5{
         font-weight: normal;
-        opacity: 20%;
-        cursor: auto;
+        opacity: 5%;
         padding: 10px;
         font-size: 3em;
+        position: absolute;
+        top: 90px;
     }
 
-    .texte1{
-        font-size: 1em;
+    .texte5{
+        font-size: 1.5em;
         font-weight: normal;
-        cursor: auto;
+        position: absolute;
+        top: 100px;
+        letter-spacing: normal;
     }
     
-    #trait{
+    #trait4{
         width: 80px;
         height: 1px;
         background-color: black;
+        position: absolute;
+        top: 250px;
     }
     
     .nom{
