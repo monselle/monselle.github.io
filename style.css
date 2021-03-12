@@ -186,7 +186,7 @@ li:hover a{
     top: 250px;
 }
 
-/*ici correspond à la ppartie activites*/
+/*ici correspond à la partie activites*/
 
 .activites{
     width: 100%;
@@ -348,7 +348,7 @@ li:hover a{
     height: 4vh;
     background-color: black;
     color: white;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -415,7 +415,6 @@ img{
         width: 60px;
         height: 47px;
         position: relative;
-        cursor: pointer;
     }
 
     .btn-menu span {
@@ -503,7 +502,6 @@ img{
         width: 50%;
         font-weight: normal;
         opacity: 5%;
-        cursor: auto;
         font-size: 2em;
         position: absolute;
         top: 60px;
@@ -511,7 +509,6 @@ img{
 
     .texte1{
         width: 80%;
-        cursor: auto;
         font-size: 1em;
         font-weight: normal;
         position: absolute;
@@ -520,6 +517,123 @@ img{
     }
     
     #trait{
+        width: 60px;
+        height: 0.5px;
+        background-color: black;
+        position: absolute;
+        top: 200px;
+    }
+    
+    /*ici correspond à la partie realisation en responsive*/
+
+    .realisation{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    #texte2{
+        width: 45%;
+        font-weight: normal;
+        opacity: 5%;
+        font-size: 2em;
+        position: absolute;
+        top: 60px;
+    }
+    
+    .texte2{
+        width: 80%;
+        font-size: 1em;
+        font-weight: normal;
+        position: absolute;
+        letter-spacing: 0.1rem;
+        top: 90px;
+    }
+    
+    #trait1{
+        width: 60px;
+        height: 0.5px;
+        background-color: black;
+        position: absolute;
+        top: 200px;
+    }
+
+    /*ici correspond à la partie activites en responsive*/
+
+    .activites{
+        width: 100%;
+        height: 100vh;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    #texte3{
+        width: 50%;
+        font-weight: normal;
+        opacity: 5%;
+        font-size: 2em;
+        position: absolute;
+        top: 60px;
+    }
+    
+    .texte3{
+        width: 80%;
+        font-size: 1em;
+        font-weight: normal;
+        position: absolute;
+        letter-spacing: 0.1rem;
+        top: 73px;
+    }
+    
+    #trait2{
+        width: 60px;
+        height: 0.5px;
+        background-color: black;
+        position: absolute;
+        top: 200px;
+    }
+
+    /*ici correspond à la partie competences*/
+
+    .competences{
+        width: 100%;
+        height: 65vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    #texte4{
+        width: 50%;
+        font-weight: normal;
+        opacity: 5%;
+        font-size: 2em;
+        position: absolute;
+        top: 60px;
+    }
+    
+    .texte4{
+        width: 80%;
+        font-size: 1em;
+        font-weight: normal;
+        position: absolute;
+        letter-spacing: 0.1rem;
+        top: 73px;
+    }
+    
+    #trait3{
         width: 60px;
         height: 0.5px;
         background-color: black;
