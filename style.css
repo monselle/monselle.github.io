@@ -556,11 +556,12 @@ img{
     height: 40px;
 }
 
-.imgfooter{
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 30px;
+.listfooter{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  position: absolute;
+  top: 40px;
 }
 
 /*ici correspond au style qu'aura mon site à sa taille minimum sur desktop*/
