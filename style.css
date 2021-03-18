@@ -43,14 +43,23 @@ body{
     opacity: 90%;
 }
 
+.titre{
+    width: 45%;
+    height: 35%;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: center;
+}
+
 h1{
-    width: 90%;
+    width: 85%;
     font-weight: normal;
     font-size: 2em;
     color: black;
-    position: absolute;
-    top: 400px;
-    right: 5%;
     cursor: pointer;
 }
 
@@ -59,8 +68,8 @@ h1:hover{
 }
 
 .tracking-in-contract-bck {
-	-webkit-animation: tracking-in-contract-bck 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
-	        animation: tracking-in-contract-bck 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+	-webkit-animation: tracking-in-contract-bck 7s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+	        animation: tracking-in-contract-bck 7s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
 }
 
 /**animation tracking-in-contract-*/
@@ -120,18 +129,12 @@ p{
 }
 
 .menu{
-    width: 800px;
+    width: 40%;
     height: 100%;
-}
-
-ul{
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
 
 li{
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -220,6 +223,13 @@ li:hover a{
     background-color: black;
     position: absolute;
     top: 250px;
+}
+
+.text1{
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 60%;
 }
 
 /*ici correspond à la partie realisation et son contenu*/
@@ -395,6 +405,27 @@ li:hover a{
     right: 630px;
 }
 
+.imgcom{
+    width: 60%;
+    height: 10%;
+}
+
+ul{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.icom{
+    display: flex;
+    flex-direction: column;
+}
+
+.icom:hover{
+    background-color: white;
+}
+
+
 /*ici correspond à la partie contact*/
 
 .contact{
@@ -517,11 +548,19 @@ li:hover a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 img{
     width: 40px;
     height: 40px;
+}
+
+.imgfooter{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
 }
 
 /*ici correspond au style qu'aura mon site à sa taille minimum sur desktop*/
@@ -710,6 +749,14 @@ img{
         position: absolute;
         top: 110px;
     }
+
+    .text1{
+        width: 70%;
+        height: 10px;
+        position: absolute;
+        top: 160px;
+        font-size: 1em;
+    }
     
     /*ici correspond à la partie realisation en responsive*/
 
@@ -819,7 +866,7 @@ img{
         top: 110px;
     }
 
-    /*ici correspond à la partie competences*/
+    /*ici correspond à la partie competences en responsive*/
 
     .competences{
         width: 100%;
@@ -879,6 +926,23 @@ img{
         position: absolute;
         top: 90px;
         right: 110px;
+    }
+
+    .imgcom{
+        width: 40%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .icom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icone{
+        font-size: 0.5em;
     }
 
     /*ici correspond au contenu de la div contact en responsive*/
